@@ -11,7 +11,7 @@ from Drawing import drawing_data, drawing_model, drawing_PR, drawing_ROC, drawin
 from Dataset import dataset
 from Evaluation import get_Best_M
 
-warnings.filterwarnings("ignore", category=ConvergenceWarning)
+warnings.filterwarnings('ignore', category=ConvergenceWarning)
 
 N = 2000
 Ms = [1, 2, 5]

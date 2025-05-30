@@ -45,14 +45,14 @@ def get_CV(train_data, Ms, T, K):
                             boolT += 1
 
                 Sum_Accuracy += boolT / boolnum
-                print(str(M) + "阶逻辑回归模型、第" + str(n+1) + "次、第" + str(k+1) + "折的准确率为" + str(round(100 * boolT / boolnum, 2)) + "%\n")
+                print(str(M) + '阶逻辑回归模型、第' + str(n+1) + '次、第' + str(k+1) + '折的准确率为' + str(round(100 * boolT / boolnum, 2)) + '%\n')
 
         Avarage_Accuracy = Sum_Accuracy / (T * K)
-        print(str(M) + "阶逻辑回归模型" + str(T) + "次" + str(K) + "折交叉检验的平均准确率为" + str(round(100 * Avarage_Accuracy, 2)) + "%\n")
+        print(str(M) + '阶逻辑回归模型' + str(T) + '次' + str(K) + '折交叉检验的平均准确率为' + str(round(100 * Avarage_Accuracy, 2)) + '%\n')
         if Avarage_Accuracy > Max_Avarage_Accuracy:
             Max_Avarage_Accuracy = Avarage_Accuracy
             Best_M = M
-    print("最佳模型为" + str(Best_M) + "阶逻辑回归模型，其在交叉验证法验证集上的平均准确率为" + str(round(100 * Max_Avarage_Accuracy, 2)) + "%\n")
+    print('最佳模型为' + str(Best_M) + '阶逻辑回归模型，其在交叉验证法验证集上的平均准确率为' + str(round(100 * Max_Avarage_Accuracy, 2)) + '%\n')
     return Best_M
 
 def get_HO(train_data, Ms, test_ratio):
@@ -76,11 +76,11 @@ def get_HO(train_data, Ms, test_ratio):
                 if output[i] >= 0.5:
                     boolT += 1
         Accuracy = boolT / boolnum
-        print(str(M) + "阶逻辑回归模型在验证集上的准确率为" + str(round(100 * Accuracy, 2)) + "%\n")
+        print(str(M) + '阶逻辑回归模型在验证集上的准确率为' + str(round(100 * Accuracy, 2)) + '%\n')
         if Accuracy > Max_Accuracy:
             Max_Accuracy = Accuracy
             Best_M = M
-    print("最佳模型为" + str(Best_M) + "阶逻辑回归模型，其在留出法验证集上的准确率为" + str(round(100 * Max_Accuracy, 2)) + "%\n")
+    print('最佳模型为' + str(Best_M) + '阶逻辑回归模型，其在留出法验证集上的准确率为' + str(round(100 * Max_Accuracy, 2)) + '%\n')
     return Best_M
 
 def get_B(train_data, Ms, times):
@@ -104,9 +104,9 @@ def get_B(train_data, Ms, times):
                 if output[i] >= 0.5:
                     boolT += 1
         Accuracy = boolT / boolnum
-        print(str(M) + "阶逻辑回归模型在验证集上的准确率为" + str(round(100 * Accuracy, 2)) + "%\n")
+        print(str(M) + '阶逻辑回归模型在验证集上的准确率为' + str(round(100 * Accuracy, 2)) + '%\n')
         if Accuracy > Max_Accuracy:
             Max_Accuracy = Accuracy
             Best_M = M
-    print("最佳模型为" + str(Best_M) + "阶逻辑回归模型，其在自助法验证集上的准确率为" + str(round(100 * Max_Accuracy, 2)) + "%\n")
+    print('最佳模型为' + str(Best_M) + '阶逻辑回归模型，其在自助法验证集上的准确率为' + str(round(100 * Max_Accuracy, 2)) + '%\n')
     return Best_M

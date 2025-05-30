@@ -23,23 +23,23 @@ def drawing_loss(gammas):
         train_variance.append(np.sqrt(mean_squared_error(y_train, model.predict(X_train))))
         test_variance.append(np.sqrt(mean_squared_error(y_test, model.predict(X_test))))
 
-    plt.figure("SVM_LOSS")
-    gammas = [f"1e{k-5}" for k in range(10)]
+    plt.figure('SVM_LOSS')
+    gammas = [f'1e{k-5}' for k in range(10)]
     plt.plot(gammas, train_loss, color='b', label='train loss')
     plt.plot(gammas, test_loss, color='r', label='test loss')
     plt.xlabel('gamma')
     plt.ylabel('LOSS')
-    plt.title("SVM_LOSS")
+    plt.title('SVM_LOSS')
     plt.legend()
 
-    plt.figure("SVM Bias and Variance")
-    gammas = [f"1e{k-5}" for k in range(10)]
+    plt.figure('SVM Bias and Variance')
+    gammas = [f'1e{k-5}' for k in range(10)]
     plt.plot(gammas, test_bias, color='r', label='test bias')
     plt.plot(gammas, test_variance, color='g', label='test variance')
     plt.plot(gammas, test_loss, color='b', label='test loss')
     plt.xlabel('gamma')
     plt.ylabel('error')
-    plt.title("SVM Bias and Variance")
+    plt.title('SVM Bias and Variance')
     plt.legend()
 
 def drawing_PR(y_test, y_scores):
@@ -56,7 +56,7 @@ def drawing_PR(y_test, y_scores):
     plt.xlabel('Recall')
     plt.ylabel('Precision')
     plt.title('Precision-Recall curve')
-    plt.legend(loc="lower right")
+    plt.legend(loc='lower right')
 
 def drawing_ROC(y_test, y_scores):
     fpr = dict()

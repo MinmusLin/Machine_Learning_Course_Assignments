@@ -339,23 +339,3 @@ $$
 
 * Precision $ \approx 0.6314 $
 * Recall $ \approx 0.5577 $
-
-## Question 5
-
-### Background
-
-From July to August 2024, I served as an intern in the Information Technology Department at Changjiang Pension Insurance Co., Ltd., a subsidiary of Pacific Insurance Group. I was fully involved in the development and construction of the Due Diligence Assistant. The Due Diligence Assistant is a self-developed product of my internship company, targeting the internal due diligence team. **Based on Dify, I built an AI Agent, similar to the task requirements of this assignment. I replicated this project on the Tongji University AI Application Innovation Platform.**
-
-### Key Functionalities
-
-The Due Diligence Assistant is an in-house AI-powered tool developed by Changjiang Pension Company (CPC) under Pacific Insurance Group, designed to automate and streamline the traditionally manual, time-consuming due diligence process for investment projects (e.g., equity investments in energy storage power stations). By integrating workflow automation, LLM APIs, and database systems, it enhances accuracy and efficiency in risk assessment.
-
-* **Automated Problem Classification**: The AI Agent categorizes due diligence issues (e.g., financial, legal, operational risks) from meetings or documents with >95% accuracy. For instance, it flags statements like "rising battery storage costs" as a cost-overrun risk, enabling faster prioritization and analysis.
-* **Meeting Minutes Generation**: It processes multi-party meeting recordings (e.g., with investee companies, industry experts) to auto-generate structured summaries, eliminating manual transcription. This ensures critical risks (e.g., compliance gaps, supply chain disruptions) are captured in real time.
-* **Viewpoint Consistency Analysis**: The tool cross-references statements from different stakeholders (e.g., investee vs. supplier claims) to detect contradictions or alignment gaps. For example, it highlights discrepancies in cost projections reported by the battery manufacturer versus third-party experts.
-* **Regulatory & Document Compliance Checks**: By integrating regulatory databases, it auto-verifies whether project details (e.g., contracts, financial reports) comply with industry standards (e.g., insurance asset management regulations), reducing legal exposure.
-* **Workflow Integration & Optimization**: The Agent’s modular workflow (deployed via Dify) connects to CPC’s internal databases and LLM APIs, enabling seamless data retrieval and processing. Continuous testing refined its logic to handle edge cases (e.g., ambiguous technical jargon).
-
-### Application Screenshot
-
-![](assets/ApplicationScreenshot.png)

@@ -18,7 +18,7 @@ def Predict(Algorithm, test):
     }
 
     model = algs.get(Algorithm, None)
-    assert model != None, "no such algorithm"
+    assert model != None, 'no such algorithm'
     model.fit(X_train, y_train)
     prediction = model.predict(test)
 
@@ -48,16 +48,16 @@ X = scaler.fit_transform(X)
 X_train, X_test, y_train, y_test = train_test_split(X, iris_dataset['target'], random_state=0)
 y_pred = Predict('SVM', X_test)
 
-print("Test set predictions:\n {}".format(y_pred))
+print('Test set predictions:\n {}'.format(y_pred))
 
 accuracy = accuracy_score(y_test, y_pred)
 precision = precision_score(y_test, y_pred, average=None)
 recall = recall_score(y_test, y_pred, average=None)
 f1 = f1_score(y_test, y_pred, average=None)
 
-print("Accuracy:", accuracy)
-print("Precision:", precision)
-print("Recall:", recall)
-print("F1 Score:", f1)
+print('Accuracy:', accuracy)
+print('Precision:', precision)
+print('Recall:', recall)
+print('F1 Score:', f1)
 
 Vis(X_test, y_test, y_pred)

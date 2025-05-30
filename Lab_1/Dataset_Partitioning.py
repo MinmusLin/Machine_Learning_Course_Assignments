@@ -4,7 +4,7 @@ import math
 
 def Cross_Validation(data, fold, k):
 
-    assert k > 0 and k <= fold, "k should in [1, fold]"
+    assert k > 0 and k <= fold, 'k should in [1, fold]'
 
     train_data = []
     validate_data = []
