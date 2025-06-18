@@ -24,13 +24,13 @@ A collection of my machine learning course assignments.
 * [Lab 3](Lab_3)
 课程实验 3
 
-* [Assignments 1](Assignments_1.md)
+* [Assignment 1](Assignment_1.md)
 课程作业 1
 
-* [Assignments 2](Assignments_2.md)
+* [Assignment 2](Assignment_2.md)
 课程作业 2
 
-* [Assignments 3](Assignments_3.md)
+* [Assignment 3](Assignment_3.md)
 课程作业 3
 
 ## 免责声明
