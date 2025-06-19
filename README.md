@@ -36,8 +36,11 @@ A collection of my machine learning course assignments.
 * [Presentation](Presentation.pptx)
 课程项目汇报
 
-* [Report](Report.pdf)
-课程项目报告
+* [Report (English Version)](Report_En.pdf)
+课程项目报告（英文版）
+
+* [Report (Chinese Version)](Report_Zh.pdf)
+课程项目报告（中文版）
 
 ## 免责声明
 
